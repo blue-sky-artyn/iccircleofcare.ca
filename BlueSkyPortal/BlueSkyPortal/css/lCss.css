@@ -1,0 +1,16 @@
+﻿iframe {
+    width: 100%;
+}
+
+.news-gist {
+    font-size: 14px;
+}
+
+.title-with-icon {
+    margin: 0 10px;
+}
+
+/* Product details */
+.product-code p {
+    font-size: 9px;
+}

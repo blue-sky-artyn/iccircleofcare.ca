@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Menu.master" AutoEventWireup="true" CodeFile="footer.master.cs" Inherits="footer" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MenuMasterHead" runat="Server">
+    <asp:ContentPlaceHolder ID="contentPlaceFooterHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .footer-logo {
+            color: white;
+            font-family: 'Kalam', cursive;
+            font-size: 20px;
+            text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+            margin: 0;
+            display: inline-flex;
+            position: relative;
+            top: 0;
+            letter-spacing: -3px;
+        }
+    </style>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MenuMasterContent" runat="Server">
+    <asp:ContentPlaceHolder ID="contentPlaceFooterBody" runat="server">
+    </asp:ContentPlaceHolder>
+    <footer class="section footer noover">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="widget clearfix">
+                        <h3 class="widget-title">Subscribe Our Newsletter</h3>
+                        <div class="newsletter-widget">
+                            <p>
+                                You can opt out of our newsletters at any time.<br>
+                                See our <a href="#">privacy policy</a>.
+                            </p>
+                            <div class="form-inline" role="search">
+                                <div class="form-1">
+                                    <input type="text" id="txtRegister" runat="server" class="form-control" placeholder="Enter email here..">
+                                    <button type="button" id="btnRegister" runat="server" usesubmitbehavior="False" onserverclick="btnRegister_Click" class="btn btn-primary"><i class="fa fa-paper-plane-o"></i></button>
+                                    <p id="lblErrorSubscriptors" runat="server" class="error-msg" style="color: red;"></p>
+                                </div>
+                            </div>
+                            <%--<img src="images/logo.png" alt="" class="dark-logo-bottom img-responsive">--%>
+                            <h2 class="dark-logo-bottom img-responsive footer-logo">ICCircleOfCare</h2>
+                        </div>
+                        <!-- end newsletter -->
+                    </div>
+                    <!-- end widget -->
+                </div>
+                <!-- end col -->
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="widget clearfix">
+                        <h3 class="widget-title">Become a member of IC Circle of care</h3>
+                        <p>By subscribing the newletter getting aware of every upcoming activities and news</p>
+                    </div>
+                    <!-- end widget -->
+                </div>
+                <!-- end col -->
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="widget clearfix">
+                        <h3 class="widget-title">Popular Tags</h3>
+                        <div class="tags-widget">
+                            <ul class="list-inline">
+                                <li><a href="#">NGO</a></li>
+                                <li><a href="#">IC circle of care</a></li>
+                                <li><a href="#">non-gorverment organization</a></li>
+                                <li><a href="#">charity</a></li>
+                                <li><a href="#">non-profit activities</a></li>
+                            </ul>
+                        </div>
+                        <!-- end list-widget -->
+                    </div>
+                    <!-- end widget -->
+                </div>
+                <!-- end col -->
+
+                <div class="col-lg-2 col-md-2">
+                    <div class="widget clearfix">
+                        <h3 class="widget-title">Support</h3>
+                        <div class="list-widget">
+                            <ul>
+                                <li><a href="#">www.website1.ca</a></li>
+                                <li><a href="#">www.website2.ca</a></li>
+                                <li><a href="#">www.website3.ca</a></li>
+                                <li><a href="#">www.website4.ca</a></li>
+                            </ul>
+                        </div>
+                        <!-- end list-widget -->
+                    </div>
+                    <!-- end widget -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </footer>
+    <!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="clearfix">
+                <div class="pull-right">
+                    <div class="footer-links">
+                        <ul class="list-inline">
+                            <li>Designed & Developed : <a href="#">BlueSky Co. (i8net2000@yahoo.com)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end copy -->
+    </div>
+        <!-- end wrapper -->
+
+
+    <!-- VIDEO BG PLUGINS -->
+    <%--        <script src="js/videobg.js"></script>--%>
+</asp:Content>
+

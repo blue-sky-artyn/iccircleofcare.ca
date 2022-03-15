@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Meta -->
+    <title>ICCircleOfCare-non-governmental and non-profit organization</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Decoton company (Farhad Taheri)">
+
+
+    <!-- Site Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom & Default Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/lCss.css">
+    <link rel="stylesheet" href="icss.css">
+
+    <!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+	<![endif]-->
+
+    <style>
+        .dark-logo-bottom {
+            opacity: 0.5;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            width: 20%;
+            margin: 24px auto;
+        }
+        /* other pages title */
+        .top-title-others {
+            margin-top: 10%;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="Materhead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- LOADER -->
+    <div id="preloader">
+        <img class="preloader" src="images/loader.gif" alt="">
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <form id="form1" runat="server">
+
+        <div id="wrapper">
+            
+            <asp:ContentPlaceHolder ID="MainMasterContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <!-- Smartsupp Live Chat script -->
+            <script type="text/javascript">
+                var _smartsupp = _smartsupp || {};
+                _smartsupp.key = '787785f7b3b4b8b21cdc1cc97132fa1d1a623911';
+                window.smartsupp || (function (d) {
+                    var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
+                    s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+                    c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+                    c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+                })(document);
+            </script>
+    </form>
+</body>
+</html>

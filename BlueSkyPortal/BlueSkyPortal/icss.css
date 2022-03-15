@@ -1,0 +1,10 @@
+﻿.error-msg {
+    color: red;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.row-space {
+    margin-top: 1.5rem;
+}

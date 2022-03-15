@@ -1,0 +1,193 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.master" AutoEventWireup="true" CodeFile="Menu.master.cs" Inherits="Menu" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="Materhead" runat="Server">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .sub-cat-menu {
+            height: 0;
+            margin-left: 11%;
+            overflow: hidden;
+        }
+
+        .logo-top {
+            color: white;
+            font-family: 'Kalam', cursive;
+            font-size: 48px;
+            text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+            margin: 0;
+            display: inline-flex;
+            position: relative;
+            top: 0;
+            letter-spacing: -3px;
+        }
+
+        .btn-donate {
+            background-color: #84c54e;
+            color: #ffffff;
+            padding: 10px 30px;
+        }
+
+            .btn-donate:hover {
+                color: #ffffff;
+                background-color: #ff7e27;
+            }
+
+        .bar-position {
+            margin: 6% 0;
+        }
+
+        .btn-position {
+            margin: 14% 0;
+        }
+        .menu-bar-new {
+            background-color: white;
+            padding: 5px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="MenuMasterHead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainMasterContent" runat="Server">
+    <header class="header">
+        <div class="topbar clearfix">
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="col-md-6 col-sm-6 text-left">
+                        <h2 class="logo-top">ICCircleOfCare</h2>
+                    </div>
+                    <!-- end left -->
+                    <div class="col-md-4 col-sm-4 hidden-xs text-right">
+                        <div id="socialHtml" runat="server" class="bar-position social">
+                            <a class="facebook" href="#" data-tooltip="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+                            <a class="twitter" href="#" data-tooltip="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+                            <a class="google" href="#" data-tooltip="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                            <a class="linkedin" href="#" data-tooltip="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            <a class="pinterest" href="#" data-tooltip="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                            <a class="telegram" href="#" data-tooltip="tooltip" data-placement="bottom" title="telegram"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                            <a class="instagram" href="#" data-tooltip="tooltip" data-placement="bottom" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                        <!-- end social -->
+                    </div>
+                    <!-- end left -->
+                    <div class="col-md-2 col-sm-2 text-left">
+                        <div class="btn-position"><a class="btn-donate">Donate</a></div>
+                    </div>
+
+
+
+
+
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end topbar -->
+        <div class="menu-bar-new">
+            <div class="container">
+                <nav class="navbar navbar-default yamm">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="default.aspx">Home</a></li>
+                            <li class="dropdown yamm-fw yamm-half"><a href="#" data-toggle="dropdown" class="dropdown-toggle active">Avaiable opportunities<b class="fa fa-angle-down"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="yamm-content clearfix">
+                                            <div class="row-fluid">
+                                                <div id="productMenuHtml" runat="server" class="col-md-6 col-sm-6">
+                                                    <h4>Products</h4>
+                                                    <ul>
+                                                        <li><a href="#">Cowns</a></li>
+                                                        <li><a href="#">Baseboard</a></li>
+                                                    </ul>
+                                                    <h4>Products</h4>
+                                                    <ul>
+                                                        <li><a href="#">Marbel sheets</a></li>
+                                                        <li><a href="#">Wall cardboard</a></li>
+                                                        <li><a href="#">Lights</a></li>
+                                                        <li><a href="#">PVC Glue</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="menu-widget text-center">
+                                                        <div class="image-wrap entry">
+                                                            <img src="images/donate.png" alt="" class="img-responsive">
+                                                        </div>
+                                                        <!-- end image-wrap -->
+                                                        <h5><a href="#">Donation opportunities</a></h5>
+                                                        <a href="product-category.aspx" class="menu-button">View All</a>
+                                                    </div>
+                                                    <!-- end widget -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="news.aspx">News </a></li>
+                            <li class="dropdown hassubmenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Instalation</a></li>
+                                    <li><a href="#">Supply</a></li>
+                                    <li><a href="#">Delivery</a></li>
+                                    <li><a href="#">Consultaion</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.aspx">About Us </a></li>
+                            <%--<li class="dropdown hassubmenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">News <span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Contruction </a></li>
+                                    <li><a href="#">Sales market </a></li>
+                                </ul>
+                            </li>--%>
+                            <li><a href="contact.aspx">Contact</a></li>
+                            <li class="iconitem"><a href="#" data-toggle="modal" data-target="#login-modal"><i class="fa fa-search"></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- end navbar -->
+            </div>
+            <!-- end container -->
+        </div>
+    </header>
+    <asp:ContentPlaceHolder ID="MenuMasterContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script>
+        $(".main-cat").hover(function () {
+            var mainId = $(this).attr("main-cat");
+
+            $("ul").find(`[sub-cat='${mainId}']`).css("height", "auto");
+        });
+
+        $(".sub-cat-menu").hover(function () {
+            var mainId = $(this).attr("sub-cat");
+
+            $("ul").find(`[sub-cat='${mainId}']`).css("height", "auto");
+        });
+
+        $(".main-cat").mouseleave(function () {
+            var mainId = $(this).attr("main-cat");
+
+            $("ul").find(`[sub-cat='${mainId}']`).css("height", "0px");
+        });
+
+        $(".sub-cat-menu").mouseleave(function () {
+            $(this).css("height", "0px");
+        });
+    </script>
+</asp:Content>
+
